@@ -1,13 +1,9 @@
 <?php
 
 require_once 'C:\xampp\htdocs\TH_WEB\config.php';
-
-
 if (empty(session_id()) && !headers_sent()) {
 	session_start();
 }
-
-
 $ac_sdt_dangnhap = $_POST['sdt_dangnhap'] ?? '';
 $ac_matkhau_dangnhap = $_POST['matkhau_dangnhap'] ?? '';
 function DangNhap()
@@ -33,12 +29,6 @@ function DangNhap()
 	}
 }
 DangNhap();
-
-
-
-
-
-
 
 function DangKy()
 {

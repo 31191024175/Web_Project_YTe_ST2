@@ -1,16 +1,5 @@
 <?php 
 require_once 'C:\xampp\htdocs\TH_WEB\config.php';
-
-// function connect($link){
-//     $link=mysqli_connect(HOST,USER,PASSWORD,DB);
-//     if(mysqli_connect_erro()){
-//         echo "Lỗi kết nối đến máy chủ".mysqli_connect_error();
-//         exit();
-//     }
-// }
-
-
-
 function KhaiBaoYTe() {
 	$conn= mysqli_connect(HOST,USER,PASSWORD,DB);
 	if(isset($_POST['submit'])){

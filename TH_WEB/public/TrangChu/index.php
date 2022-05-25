@@ -216,55 +216,10 @@
         <div class="container">
 
             <div class="d-flex justify-content-center flex-wrap">
-
-                <div class="card">
-                    <img src="images/Minhtu.jpg" alt="">
-                    <h3>Lê Minh Tú</h3>
-                    <span>Chuyên gia về Virus</span>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/GiaKhanh.jpg" alt="">
-                    <h3>Võ Gia Khánh</h3>
-                    <span>Chuyên gia về Virus</span>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/Dung.jpg" alt="">
-                    <h3>Vũ Thị Minh Dung</h3>
-                    <span>Chuyên gia về Virus</span>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <img src="images/Manh.jpg" alt="">
-                    <h3>Lê Đăng Mạnh</h3>
-                    <span>Chuyên gia về Virus</span>
-                    <div class="share">
-                        <a href="#" class="fab fa-facebook-f"></a>
-                        <a href="#" class="fab fa-twitter"></a>
-                        <a href="#" class="fab fa-instagram"></a>
-                        <a href="#" class="fab fa-linkedin"></a>
-                    </div>
-                </div>
-
+                <?php
+                require 'C:\xampp\htdocs\TH_WEB\module_expert.php';
+                Card();
+                ?>
             </div>
 
         </div>
@@ -314,49 +269,9 @@
         <div class="container">
 
             <div class="d-flex justify-content-center flex-wrap">
-
-                <div class="card p-3 m-2">
-                    <div class="image">
-                        <img src="images/new1.png" class="w-100 h-100" alt="">
-                    </div>
-                    <div class="content p-2">
-                        <h3>Chiến dịch phủ vắc-xin Covid</h3>
-                        <a href="#" class="link-btn">Đọc thêm</a>
-                        <div class="icons">
-                            <a href="#"><i class="fas fa-user"></i>Minh Tú</a>
-                            <a href="#"><i class="fas fa-calendar"></i>01 aug, 2021</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card p-3 m-2">
-                    <div class="image">
-                        <img src="images/new2.png" class="w-100 h-100" alt="">
-                    </div>
-                    <div class="content p-2">
-                        <h3>Số ca mắc TPHCM hôm nay</h3>
-                        <a href="#" class="link-btn">Đọc thêm</a>
-                        <div class="icons">
-                            <a href="#"><i class="fas fa-user"></i>Gia Khánh</a>
-                            <a href="#"><i class="fas fa-calendar"></i>01 aug, 2021</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card p-3 m-2">
-                    <div class="image">
-                        <img src="images/new3.png" class="w-100 h-100" alt="">
-                    </div>
-                    <div class="content p-2">
-                        <h3>Đẩy mạnh xét nghiệm</h3>
-                        <a href="#" class="link-btn">Đọc thêm</a>
-                        <div class="icons">
-                            <a href="#"><i class="fas fa-user"></i>Đăng Mạnh</a>
-                            <a href="#"><i class="fas fa-calendar"></i>01 aug, 2021</a>
-                        </div>
-                    </div>
-                </div>
-
+                <?php
+                TinTuc()
+                ?>
             </div>
 
         </div>

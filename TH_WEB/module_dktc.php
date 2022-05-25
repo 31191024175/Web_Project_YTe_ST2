@@ -1,13 +1,7 @@
 <?php 
 require_once 'C:\xampp\htdocs\TH_WEB\config.php';
 
-// // function connect($link){
-// //     $link=mysqli_connect(HOST,USER,PASSWORD,DB);
-// //     if(mysqli_connect_erro()){
-// //         echo "Lỗi kết nối đến máy chủ".mysqli_connect_error();
-// //         exit();
-// //     }
-// // }
+
 
 function DangKyTiemChung(){
 	if(isset($_GET['save_dktc'])){
@@ -103,27 +97,3 @@ DangKyTiemChung();
 
 
  ?>
- <!-- <html>
-	 <body>
-		 <script>
-			 alert('Thành công')
-		 </script>
-	 </body>
- </html> -->
-
- <!-- </script>";
-		echo "<script>
-		Next1.addEventListener('click', () => {
-			body0.style.display ='none';
-			form3.style.display = 'block';
-			
-			// form3.style.visibility ='visible';
-			// form3.style.position = 'absolute';
-			// form3.style.top = '150px';
-			form3.scrollIntoView(true);
-			
-			
-			progress.style.width = '900px';
-		  });
-		
-		</script>"; -->

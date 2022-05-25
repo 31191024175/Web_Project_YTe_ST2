@@ -9,11 +9,6 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link href="STYLE.CSS" rel="stylesheet" type="text/css">
-
-    <!-- bootstrap cdn link  -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
-
-    <!-- font awesome cdn link  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -29,7 +24,7 @@
                 <a href="#" class="logo">c<span class="fas fa-virus"></span>vid-19</a>
                 <div id="menu-bar" class="fas fa-bars d-inline-block d-md-none"></div>
                 <nav class="nav">
-                    <a href="/TH_WEB/public/TrangChu/index.php" >Trang chủ</a>
+                    <a href="/TH_WEB/public/TrangChu/index.php">Trang chủ</a>
                     <a href="/TH_WEB/public/KhaiBao/index.php">Khai báo y tế</a>
                     <a href="/TH_WEB/public/DangKyTiemChung/index.php" class="active">Đăng ký Tiêm Chủng</a>
                     <a href="/TH_WEB/public/DangNhap/index.php">Tài khoản Cá Nhân</a>
@@ -84,13 +79,13 @@
                 </div>
 
                 <!-- Form1 từ đây -->
-                <form action=""  id="body0">
+                <form action="" id="body0">
                     <form id="form1" action="" method="get">
                         <!-- PROGRESS -->
                         <div class="checkbox-row">
                             <div class="checkin4">
                                 <input type="radio" name="in4" id="btn_dk_ban_than1" checked="checked" /> Đăng ký cho bản thân</input>
-                                <input type="radio" name="in4" id="btn-dk_nguoi_than1"  /> Đăng ký cho người thân</input>
+                                <input type="radio" name="in4" id="btn-dk_nguoi_than1" /> Đăng ký cho người thân</input>
 
                             </div>
                         </div>
@@ -110,7 +105,7 @@
                                         <option value="3">Mũi tiêm thứ ba</option>
                                         <option value="4">Mũi tiêm thứ tư</option>
                                         <option value="5">Mũi tiêm năm</option>
-                                        
+
                                     </select>
                                 </div>
                             </div>
@@ -572,7 +567,7 @@
                         <div class="form-inline">
                             <p class="col-mt-3 col-mt-3">
                                 Sau khi đã đọc các thông tin nêu trên, tôi đã hiểu và:
-                                <input name="dongy_dktc"class="form-control ng-untouched ng-pristine ng-valid" style="width: 20px; height: 20px;" type="checkbox" value="1">
+                                <input name="dongy_dktc" class="form-control ng-untouched ng-pristine ng-valid" style="width: 20px; height: 20px;" type="checkbox" value="1">
                                 <span style="font-weight: 600;">Đồng ý tiêm chủng</span>
                             </p>
                         </div>
@@ -1192,7 +1187,7 @@
                                 <div class="combobox-group">
                                     <div class="input-group combobox-control">
                                         <select class="form-control" data-msg-required="Vui lòng chọn giới tính" name="gioitinh_xntc">
-                                            <option disabled >Chọn giới tính</option>
+                                            <option disabled>Chọn giới tính</option>
                                             <option selected>Nam</option>
                                             <option>Nữ</option>
                                             <option>Giới tính khác</option>
