@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 25, 2022 at 05:36 PM
+-- Generation Time: May 26, 2022 at 01:17 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 7.4.29
 
@@ -46,7 +46,8 @@ INSERT INTO `tb_account` (`id_account`, `ac_sdt`, `ac_matkhau`) VALUES
 (6, '0589344368', '123456789'),
 (7, '01224988500', '123456789'),
 (8, '0589344367', 'Cautroimuaduocve123'),
-(9, '0933115406', '123456789');
+(9, '0933115406', '123456789'),
+(10, '0933115407', '123456789');
 
 -- --------------------------------------------------------
 
@@ -67,7 +68,10 @@ CREATE TABLE `tb_chuyengia` (
 --
 
 INSERT INTO `tb_chuyengia` (`id_chuyengia`, `chuyengia_hoten`, `chuyengia_chucvu`, `chuyengia_sdt`, `chuyengia_hinh`) VALUES
-(1, 'Lê Minh Tú', 'Chuyên gia Virus', '0589344589', '');
+(0, 'Lê Đăng Mạnh', 'Chuyên Gia Sinh Học', '012456789', 'images/Manh.jpg'),
+(1, 'Lê Minh Tú', 'Chuyên gia Virus', '0589344589', 'images/Minhtu.jpg'),
+(2, 'Võ Gia Khánh', 'Chuyên Gia Dịch Tễ', '0999111576', 'images/GiaKhanh.jpg'),
+(3, 'Vũ Thị Minh Dung', 'Chuyên Gia Y Dược', '0897854877', 'images/Dung.jpg');
 
 -- --------------------------------------------------------
 
@@ -90,6 +94,13 @@ CREATE TABLE `tb_dktc` (
   `user_buoitiem` enum('S','C','A') COLLATE utf8_unicode_ci DEFAULT NULL,
   `user_dongy` enum('1') COLLATE utf8_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_dktc`
+--
+
+INSERT INTO `tb_dktc` (`id_dktc`, `user_sdt`, `user_tiensu_phanve`, `user_tiensu_covid`, `user_tiensu_vacxin`, `user_tiensu_suygiam`, `user_tiensu_dungthuoc`, `user_tiensu_captinh`, `user_tiensu_mantinh`, `user_muitiem`, `user_ngaytiem`, `user_buoitiem`, `user_dongy`) VALUES
+(1, '', '0', '0', '0', '0', '0', '0', '0', '1', '', 'S', '');
 
 -- --------------------------------------------------------
 
@@ -122,10 +133,20 @@ CREATE TABLE `tb_kbyt` (
 CREATE TABLE `tb_tintuc` (
   `id_tintuc` int(11) NOT NULL,
   `tintuc_tieude` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
-  `tintuc_tacgia` int(30) NOT NULL,
+  `tintuc_tacgia` varchar(30) COLLATE utf8_unicode_ci NOT NULL,
   `tintuc_ngay` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
-  `tintuc_noidung` varchar(1000) COLLATE utf8_unicode_ci NOT NULL
+  `tintuc_noidung` varchar(1000) COLLATE utf8_unicode_ci NOT NULL,
+  `tintuc_hinhanh` varchar(50) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `tb_tintuc`
+--
+
+INSERT INTO `tb_tintuc` (`id_tintuc`, `tintuc_tieude`, `tintuc_tacgia`, `tintuc_ngay`, `tintuc_noidung`, `tintuc_hinhanh`) VALUES
+(0, 'Chiến Dịch Phủ Vắc-Xin Covid', 'Minh Tú', '01 Aug, 2021', 'images/new1.png', 'images/new1.png'),
+(1, 'Số Ca Mắc TPHCM Hôm Nay', 'Gia Khánh', '01 Aug, 2021', '', 'images/new2.png'),
+(2, 'Đẩy Mạnh Xét Nghiệm', 'Đăng Mạnh', '01 Aug, 2021', '', 'images/new3.png');
 
 -- --------------------------------------------------------
 
@@ -154,7 +175,8 @@ CREATE TABLE `tb_user` (
 --
 
 INSERT INTO `tb_user` (`user_id`, `user_hoten`, `user_ngaysinh`, `user_gioitinh`, `user_sdt_`, `user_email`, `user_cccd`, `user_quoctich`, `user_dantoc`, `user_sonha`, `user_tinh`, `user_quanhuyen`, `user_xaphuong`) VALUES
-(1, 'Lê Minh Tú', '2001-02-10', 'Nam', '0589344362', NULL, '026118907', NULL, NULL, '490 Phan Huy Ích', 'TPHCM', 'Gò Vấp', 'Phường 12');
+(1, 'Lê Minh Tú', '2001-02-10', 'Nam', '0589344362', NULL, '026118907', NULL, NULL, '490 Phan Huy Ích', 'TPHCM', 'Gò Vấp', 'Phường 12'),
+(2, '', '', 'Nam', '', '', '', 'Việt Nam', 'Kinh', '', '', '', '');
 
 -- --------------------------------------------------------
 
@@ -242,13 +264,13 @@ ALTER TABLE `tb_xntc`
 -- AUTO_INCREMENT for table `tb_account`
 --
 ALTER TABLE `tb_account`
-  MODIFY `id_account` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id_account` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT for table `tb_dktc`
 --
 ALTER TABLE `tb_dktc`
-  MODIFY `id_dktc` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_dktc` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `tb_kbyt`
@@ -260,7 +282,7 @@ ALTER TABLE `tb_kbyt`
 -- AUTO_INCREMENT for table `tb_user`
 --
 ALTER TABLE `tb_user`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
